@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- esto para enlazar un jquery -->
+
+<script>
+
+$(document).ready(function(){
+$("#panel").click(function(){
+$("#panel").slideUp("slow"); <!-- slow o número, para indicar la velocidad que tarde en mostrar -->
+});
+
+$("#flip").click(function(){
+$("#panel").slideDown("slow"); 
+});
+
+
+
+});
+
+</script>
+
+<style> 
+#panel, #flip { <!--slidedown  -->
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+#panel {
+  padding: 50px;
+   <!-- display: none; me indica que no se muestre -->
+}
+</style>
+
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h2").hide();
+  });
+});
+
+
+
+
+</script>
+</head>
+<body>
+
+<h2>Cabecera</h2>
+
+<p>Parrafo.</p>
+<p>Parrafo 2</p>
+
+<button>Pincha para esconder los botones</button>
+<button>Pincha para esconder los botones 2</button>
+
+<div id="flip">Haz clic para ver el panel</div>
+<div id="panel">Se muestra panel</div>
+
+
+
+</body>
+</html>
